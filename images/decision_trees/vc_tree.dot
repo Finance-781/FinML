@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="average_funded <= 0.479\ngini = 0.667\nsamples = 71958\nvalue = [23986, 23986, 23986]\nclass = Acquired & Open", fillcolor="#e5813900"] ;
+1 [label="average_funded <= -2.111\ngini = 0.623\nsamples = 30960\nvalue = [5205, 11746, 14009]\nclass = Not Acquired & Open", fillcolor="#8139e51e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="gini = 0.527\nsamples = 8839\nvalue = [613, 2934, 5292]\nclass = Not Acquired & Open", fillcolor="#8139e566"] ;
+1 -> 2 ;
+3 [label="gini = 0.643\nsamples = 22121\nvalue = [4592, 8812, 8717]\nclass = Acquired & Closed", fillcolor="#39e58102"] ;
+1 -> 3 ;
+4 [label="total_rounds <= 2.5\ngini = 0.642\nsamples = 40998\nvalue = [18781, 12240, 9977]\nclass = Acquired & Open", fillcolor="#e581393a"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="gini = 0.652\nsamples = 30801\nvalue = [13325, 9048, 8428]\nclass = Acquired & Open", fillcolor="#e5813932"] ;
+4 -> 5 ;
+6 [label="gini = 0.593\nsamples = 10197\nvalue = [5456, 3192, 1549]\nclass = Acquired & Open", fillcolor="#e5813952"] ;
+4 -> 6 ;
+}
